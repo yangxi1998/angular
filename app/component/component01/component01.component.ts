@@ -14,7 +14,8 @@ export class Component01Component implements OnInit {  //类中的变量用priva
   txt:string;
   fun(e){
    if(e.keyCode==13){
-    this.event.emit(this.txt);}
+    this.event.emit(this.txt);
+   this.txt='';}
   }
   @Input() arr;
 
