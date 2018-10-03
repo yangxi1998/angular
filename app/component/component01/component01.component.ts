@@ -11,12 +11,11 @@ export class Component01Component implements OnInit {  //类中的变量用priva
    ngOnInit(){}
   @Output() event=new EventEmitter();
   @Output() txt1=new EventEmitter();
-  gun(txt){
-  this.txt1.emit(txt);}
   txt:string;
   fun(e){
    if(e.keyCode==13){
-    this.event.emit(this.txt);}
+    this.event.emit(this.txt);
+   this.txt='';}
   }
   @Input() arr;
 
