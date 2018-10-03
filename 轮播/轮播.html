@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>轮播</title>
+</head>
+<style>
+    #a{width:800px;
+       height:252px;
+       margin:30px auto;
+       overflow:hidden;/*多余的部分不再显示*/
+       cursor:pointer;  /*鼠标划上去为手型*/
+       position:relative;
+       }
+    #a img{display:none;}
+    #a .left{
+        position:absolute;   /*相对于父级绝对定位*/
+        left:0px;
+        top:100px; 
+        color:beige;
+         cursor:pointer;
+         font-size:30px;}
+    #a .right{
+        position:absolute;   /*相对于父级绝对定位*/
+        right:0px;
+        top:100px;
+        color:beige; 
+         cursor:pointer;
+         font-size:30px;}
+    #bottom{list-style:none;
+           float:left;
+           position:absolute;
+           bottom:0px;
+           left:280px;
+           }
+    #bottom ul li{list-style:none;
+         cursor:pointer;
+           float:left;
+         border-radius:50%;
+           width:20px;
+           height:20px;
+           background-color:beige;}
+</style>
+<body>
+    <div id="a">
+        <div class="left"><</div>
+        <img style="display:block;" src="image/1.jpg"/>
+        <img src="image/2.jpg"/>
+        <img src="image/3.jpg"/>
+        <img src="image/4.gif"/>
+        <img src="image/5.jpg"/>
+        <img src="image/6.jpg"/>
+        <img src="image/7.jpg"/>
+        <img src="image/8.jpg"/>
+        <img src="image/9.jpg"/>
+        <div class="right">></div>
+        <div id="bottom">
+            <ul id="num">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+<script src="animate2.js"></script>
+<script>
+    var a=document.getElementById('a');
+    var img=a.getElementsByTagName('img');
+    var left=document.getElementsByClassName('left')[0];
+    var right=document.getElementsByClassName('right')[0];
+    var num=document.getElementById('num');
+    var lis=num.children;
+    animate(a,img,left,right,lis);  
+ </script>
+</html>
