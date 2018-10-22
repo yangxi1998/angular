@@ -1,0 +1,75 @@
+<div class="content">
+  <div class="header">
+    <ul>
+      <li><a [routerLink]="['/home/task']"><img src="../../../assets/images/32.png"/></a></li>
+      <li><a href=""><span>{{course?.name1}}</span></a></li>
+      <li><a href=""><span>{{course?.courseName}}</span></a></li>
+      <li><a href=""><span>{{course?.name2}}</span></a></li>
+     <li><span>{{course?.name3}}</span></li>
+    </ul>
+    <div class="title">
+      <span>{{course?.name3}}</span>
+    </div>
+  </div>
+  <div class="video">
+      <video class="video-play" src="{{course?.video}}" width="1180" height="456" controls="controls" autoplay="true">
+      </video>
+      <div class="video-list">
+        <div class="video-list-content">
+          <div class="list-title">课程目录</div>
+          <h4><a href="">{{list?.name1}}</a></h4>
+          <h4><a href="">{{list?.name2}}</a></h4>
+          <h4><a href="">{{list?.name3}}</a></h4>
+          <h4><a href="">{{list?.name4}}</a></h4>
+          <h4><a href="">{{list?.name5}}</a></h4>
+          <h4><a href="">{{list?.name6}}</a></h4>
+          <h4><a href="">{{list?.name7}}</a></h4>
+          <h4><a href="">{{list?.name8}}</a></h4>
+          <h4><a href="">{{list?.name9}}</a></h4>
+        </div>
+      </div>
+  </div>
+  <div class="menu">
+    <div class="pinglun">
+      <div class="content">
+        {{list?.content}}
+      </div>
+      <div class="focus">
+        <a href=""><img src="../../../assets/images/33.png"/>关注</a>
+      </div>
+    </div>
+    <div class="menu1">
+      <span class="s1">技术问答</span>
+    </div>
+    <div class="b">
+      <div class="d">
+        <ul>
+        <li *ngFor="let item of arr;let i=index">
+          <img src='../../../assets/images/{{item}}.png'/>
+        </li>
+        </ul>
+      </div>
+      <textarea class="c"></textarea>
+    </div>
+    <div class="e">
+        <a href=""><img src="../../../assets/images/22.png"><span class="e1">话题</span></a>
+        <button class="e2" type="submit">提问</button>
+    </div>
+  </div>
+  <div class="list">
+    <div class="image">
+      <img src="{{list1?.image}}"/>
+    </div>
+    <div class="content1">
+     <span>{{list1?.name}}</span>
+     <p>{{list1?.content}}</p>
+     <h3>{{list1?.date}}
+     <div class="span1">
+       <span>{{list1?.a1}}</span>
+       <span>{{list1?.a2}}</span>
+       <span>{{list1?.a3}}</span>
+     </div>
+     </h3>
+    </div>
+  </div>
+</div>

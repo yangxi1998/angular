@@ -1,0 +1,18 @@
+.right{ 
+    float:left;  
+    width:960px;height:600px;
+    margin-left:32px;
+    border:2px #ccc solid;
+    box-shadow: 2px 2px 20px wheat;
+    border-radius: 4px;
+   }
+.header{border-bottom: 2px solid #eee;height:40px;width:885px;margin-top:39px;}
+.p1{float:left;height:40px;margin-left:52px;font-size:1.2em;}
+.search{border-radius:10%;height:33px;width:200px;float:left;}
+.hearder-right{float:right;}
+a:link{color:black;}
+a:visited{color:#ff6e3d;}
+a:hover{cursor:pointer;color:#ff6e3d;}
+a:active{color:#ff6e3d;cursor:pointer;}
+.content{width:880px;height:440px;}
+

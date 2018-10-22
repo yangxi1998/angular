@@ -1,0 +1,32 @@
+<div class="content">
+  <ul class="nav">
+    <li class="nav1"><a href="">课程分类</a></li>
+    <li class="nav2"><a href="">课程体系</a></li>
+  </ul>
+  <div class="course">
+      <ul>
+          
+          <li *ngFor="let course of courses;">
+              <a [routerLink]="['/course',course.id]">
+            <img class="img" src="{{course.images}}" alt=""/>
+              <h2>{{course.courseName}}</h2>
+              <div class="main">
+                <span>{{course.main}}</span>
+              </div>
+              <div class="task">
+                <span class="a">课时{{course.task}}</span>
+                <span class="b">人数{{course.person}}</span> 
+             </div>
+            </a>
+          </li>
+          
+        </ul>
+  </div>
+  <div class="list">
+      <ul>
+        <li *ngFor='let item of arr;'>
+          <a href="">{{item}}</a>
+        </li>
+      </ul>
+      </div>
+</div>

@@ -1,0 +1,17 @@
+.right{ 
+    float:left;  
+    width:960px;height:450px;
+    margin-left:32px;
+    border:2px #ccc solid;
+    box-shadow: 2px 2px 20px wheat;
+    border-radius: 4px;
+   }
+.header{border-bottom: 2px solid #eee;height:40px;width:885px;margin-top:39px;}
+ .p1{float:left;margin-left:52px;font-size:1.2em;}
+ .content{margin-left:45px;margin-top:10px;}
+.content li{width:206px;height:290px;float:left;border:1px #ccc solid;border-radius:4px;margin-left:10px;}
+.img{width:206px;height:127px;}
+h2{overflow:hidden;font-size:16px;font-weight:normal;color:black;height:16px;width:196px;padding:10px;/*有padding整体的高度为36px*/white-space: nowrap;/*规定段落中的文本不进行换行*/    text-overflow: ellipsis;/*文本溢出时显示省略号*/}
+.main{height:60px;overflow:hidden;color:gray;padding:10px;/**/font-size:18px;}
+.a{font-size:14px;color:gray;float:left;padding:10px;}
+.b{font-size:14px;color:gray;float:right;padding:10px;}

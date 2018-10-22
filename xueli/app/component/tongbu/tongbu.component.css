@@ -1,0 +1,28 @@
+.container{width:1340px;margin:40px;}
+.tu li{
+    width:300px;
+    height:305px;
+    float:left;
+    border:1px #ccc solid;
+    margin:20px 0px 0px 14px;
+    box-shadow: 2px 2px 20px wheat;
+    border-radius: 4px;
+}
+.img{width:300px;height:149px;}
+h2{overflow:hidden;font-size:20px;font-weight:normal;color:black;height:16px;width:270px;padding:15px;/*有padding整体的高度为36px*/white-space: nowrap;/*规定段落中的文本不进行换行*/    text-overflow: ellipsis;/*文本溢出时显示省略号*/}
+.main{margin: 10px 0px 10px  0px;padding:0 10px;color:#ccc;font-size:16px;/*em继承性*/overflow: hidden;white-space:nowrap;/*不换行*/text-overflow: ellipsis;height:20px;}
+.task{float:left;margin-top:15px;height:16px;width:300px;}
+.task span{float:left;margin-left:10px;height:16px;color:#b2b2b2;font-size:14px;}
+.c{float:right;margin-right:10px;background-color:#ff5b23;color:white;width:76px;height:32px;cursor:pointer;border-radius:4px;}
+[class ^="a"]:before{
+    content:url(../../../assets/images/4.png);
+}
+[class ^="b"]:before{
+    content:url(../../../assets/images/10.png);
+}
+.list li:hover{
+    background:#ccc;
+    cursor:pointer;
+}
+.list{width:690px;height:44px;float:left;margin:50px 300px; text-align:center;}
+.list li{display:block;float:left;border:1px #b2b2b2 solid;width:44px;height:39px;line-height:39px;}

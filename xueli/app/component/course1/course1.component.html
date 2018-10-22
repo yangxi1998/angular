@@ -1,0 +1,24 @@
+<div class="right">
+    <div class="header">
+       <a class="p1">正在学习</a>
+       <a class="p1">我关注的</a>
+       <a class="p1">我看过的</a>
+    </div>
+    <div class="content">
+        <ul>
+          <a href="">
+          <li *ngFor="let course of courses;">
+            <img class="img" src="{{course.images}}" alt=""/>
+              <h2>{{course.courseName}}</h2>
+              <div class="main">
+                <span>{{course.main}}</span>
+              </div>
+              <div class="task">
+                <span class="a">课时{{course.task}}</span>
+                <span class="b">人数{{course.person}}</span> 
+             </div>
+          </li>
+          </a>
+        </ul>
+    </div>
+</div>

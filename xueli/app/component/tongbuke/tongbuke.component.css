@@ -1,0 +1,27 @@
+.right{ 
+    float:left;  
+    width:960px;height:1500px;
+    margin-left:32px;
+    border:2px #ccc solid;
+    box-shadow: 2px 2px 20px wheat;
+    border-radius: 4px;
+   }
+.header{border-bottom: 2px solid #eee;height:40px;width:885px;margin-top:39px;}
+ .p1{float:left;margin-left:52px;font-size:1.2em;}
+ .search{border-radius:10%;height:33px;width:200px;float:left;}
+.hearder-right{float:right;}
+.content{width:885px;margin-top:28px;margin-left:38px;}
+.content li{height:165px;width:885px;border-bottom:1px #ccc solid;}
+.img{width:269px;height:128px;float:left; margin-top:20px;}
+h2{color:black;}
+.content-right{margin-left:18px;float:left;margin-top:20px;height:128px;width:428px;}
+.main{overflow:hidden;height:40px;color:#b2b2b2;font-size:14px;margin-top:10px;float:left;width:428px;}
+.task{float:left;margin-top:15px;height:16px;width:428px;}
+.task span{float:left;margin-left:10px;height:16px;color:#b2b2b2;line-height:16px;font-size:14px;}
+[class ^="a"]:before{
+    content:url(../../../assets/images/4.png);
+}
+[class ^="b"]:before{
+    content:url(../../../assets/images/10.png);
+}
+/*划上去字体颜色*/

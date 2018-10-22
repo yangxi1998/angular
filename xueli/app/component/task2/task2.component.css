@@ -1,0 +1,9 @@
+.list{margin:20px 30px;width:877px;height:100px;border:1px #ccc solid;}
+.list1{width:877px;height:50px;border-bottom:1px #ccc solid;}
+.list2{width:877px;height:50px;background:#f0f0f0;}
+h3{line-height: 50px;float:left;}
+.list span{line-height:50px;float:left;}
+.header2{float:right;font-size:30px;line-height:50px;}    /*em会叠加 父元素和子元素字体大小叠加*/
+.span1{color:rgb(0, 238, 255);}
+.span2{vertical-align: 15px;/*相对于该元素所在行的基线的垂直对齐*/color:rgb(0, 238, 255);font-size:15px;}
+.right{float:right;}

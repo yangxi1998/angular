@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="header">
+    <div class="h1">
+      <div class="header1">
+        <img src="../../../assets/images/26.png"/>
+        <span><a [routerLink]="['/tongbu']">同步课</a></span>   <!--变量后面？如果变量为undefined，就不找属性了，异步请求时-->
+        <span>/</span>
+        <span><a [routerLink]="['/tongbudetail']">{{course?.courseName}}</a></span>
+        <img src="../../../assets/images/27.png"/>
+      </div>
+      <div class="header2">
+        <span class="span1">0.00</span>
+        <span class="span2">分</span>
+        <span>/</span>
+        <span class="span3">20</span>
+        <span class="span4">分</span>
+        <span>/</span>
+        <span class="span5">20</span>
+        <span class="span6">分</span>
+      </div>
+    </div>
+    <ul class="list">
+      <a><li><img src="../../../assets/images/28.png">简介</li></a>   
+      <a><li><img src="../../../assets/images/29.png">互动</li></a>  
+      <a><li><img src="../../../assets/images/30.png">任务<span class="r1">{{course?.task}}</span></li></a>  
+      <a><li><img src="../../../assets/images/31.png">成员<span class="r1">{{course?.person}}</span></li></a> 
+    </ul>
+  </div>
+  <div class="content">
+    <div class="content-top">
+      <ul>
+        <li>
+          <a [routerLink]="['/tongbudetail']">全部任务</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!--<li [class.active]="flag">简介</li>添加属性2  可以写true false 也可以判断 最终结果是布尔值
+<li [ngclsass]="{'active':true,'...'">互动</li>  ngClass可以同时控制多个类
+ 设置内联样式    <li [style.color]="'red'">任务{{course?.task}}</li>  前面是[]后面加变量"" 加字符串"''"
+<li [ngStyle]="{'color':'red','font-size':'50px'}">成员{{course?.person}}</li> 
+
+<input checked type="radio"value="1" name="num" (change)="change($event)">1111      //change事件
+<input type="radio"value="2"name="num" (change)="change($event)">2222
+<input type="radio"value="3"name="num" (change)="change($event)">3333
+<div [ngSwitch]="num">
+  <div *ngSwitchCase="1">1</div>
+  <div *ngSwitchCase="2">2</div>
+  <div *ngSwitchCase="3">3</div>
+</div>
+<h3>{{courseh|async|json}}</h3>   //异步管道
+<h3>{{(courseh|async)?.id}}</h3>   //async解析一个可观察的对象  请求一个对象时，同时请求其中的多个数据，多次使用async，性能不好
+
+-->

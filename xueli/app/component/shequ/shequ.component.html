@@ -1,0 +1,59 @@
+<div class="content">
+  <div class="left">
+      <ul>
+          
+          <li *ngFor="let list2 of list2;">
+            <a href=""><img class="image" src="{{list2.image1}}" alt=""/></a>
+            <div class="content1">
+              <div class="content1-child">
+                <div class="content1-left">
+                  <a href=""><img class="image2" src="{{list2.image2}}" alt=""/></a>
+                </div>
+                <div class="content1-right">
+                  <img src="../../../assets/images/34.png"><a href=""><span class="p1">{{list2.coursename}}</span></a>
+                  <div class="main">
+                  <span>{{list2.content}}</span>
+                  </div>
+                </div>
+              </div>
+                <div class="bottom">
+                  <div class="bottom-left">
+                    <span>{{list2.name}}</span>
+                    <span>{{list2.date}}</span>
+                  </div>
+                  <div class="bottom-right">
+                    <span>阅读{{list2.a1}}</span>
+                    <span> | </span>
+                    <span>人数{{list2.a2}}</span> 
+                  </div>
+                </div>
+            </div>
+          </li>
+          
+        </ul>
+        <div class="list">
+          <ul>
+            <li *ngFor='let item of arr;'>
+              <a href="">{{item}}</a>
+            </li>
+          </ul>
+        </div>
+  </div>
+  <div class="right">
+      <h4>热门话题</h4>
+      <div class="right-left">
+      <ul>
+        <li *ngFor='let list3 of list3;'>
+          <a href="">{{list3.name}}</a>
+        </li>
+      </ul>
+      </div>
+      <div class="right-right">
+      <ul>
+        <li *ngFor='let list3 of list3;'>
+          {{list3.people}}
+        </li>
+      </ul>
+      </div>
+  </div>
+</div>
