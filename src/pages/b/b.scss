@@ -1,0 +1,35 @@
+page-b {
+     .scroll-content{
+         padding:0px!important;
+         margin:0px;
+     }
+     ion-title{
+         padding-right:48px;
+     }
+     .bar{ width:100%;
+        height:27%;
+        margin-top:20px;
+        margin-bottom:30px;
+        div{
+         width:100%;
+         height:33%;
+         background:white;
+         margin-bottom:0.5%;
+         line-height:46px;
+        span{
+            float:left;
+            padding-left:10px;
+            ion-icon{
+                padding-right:10px;
+            }
+        }
+        .b{
+            float:right;
+            color:rgb(153,153,153);
+            padding-right:10px;
+        }
+     }
+    }
+    button{height:10%;}
+
+}

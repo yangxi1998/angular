@@ -1,0 +1,215 @@
+<ion-header no-border text-center>
+
+    <ion-navbar  color="yel">
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        桔家
+      </ion-title>
+      <ion-buttons end>
+      <button ion-button icon-only style="padding-left:28px;">   <!--style="padding-left:28px;"左面有menu图标右面有search图标，让桔家居中-->
+        <ion-icon name="search"></ion-icon>
+      </button>
+      </ion-buttons>
+    
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>   <!-- padding 16px 如果不想要边距，去掉 -->
+    
+      <ul class="navList">
+        <!--
+        <li [class.first]="isActive==0" (click)="isClick(0)">推荐</li>  点击就有，其它的没有
+        <li [class.first]="isActive==1" (click)="isClick(1)">家居</li>
+        <li [class.first]="isActive==2" (click)="isClick(2)">餐厨</li>
+        <li [class.first]="isActive==3" (click)="isClick(3)">床上用品</li>-->
+        <li *ngFor="let item of arr;let idx=index;" (click)="isClick(idx)" [class.first]="isActive==idx">{{this.item}}</li>
+      </ul>
+     <!--
+      <ion-segment [(ngModel)]="lis" class="navList" > 
+        <ion-segment-button  outline value="tuijian" style="border:none;">
+            推荐
+        </ion-segment-button>
+        <ion-segment-button outline value="jiaju" style="border:none;">
+            家居
+        </ion-segment-button>
+        <ion-segment-button outline value="canchu" style="border:none;">
+            餐厨
+        </ion-segment-button>
+        <ion-segment-button outline value="bed" style="border:none;">
+            床上用品
+        </ion-segment-button>
+    </ion-segment> -->
+    <div [ngSwitch]="isActive">   <!--控制下方内容切换-->
+      <div *ngSwitchCase="0">
+         <!--轮播-->
+      <ion-slides class="sli" loop="true" autoplay="300"pager="true" >  <!--幻灯片-->
+        <ion-slide>
+          <img src="../../assets/imgs/slide1.png"/>   <!--滚动的时候3 1 2 3 1  共有5个slide-->
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/imgs/slide1.png"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/imgs/slide1.png"/>
+        </ion-slide>
+      </ion-slides>
+      <div class="subtitle">
+        <h3 text-center>热|门|推|荐</h3>
+        <p text-center>RECOMENDATION</p>
+      </div>
+      <ul class="goods">
+        <li>
+          <img src="assets/imgs/img1.png" alt="">
+          <p>——北欧原木色——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="assets/imgs/shouye1.png" alt="">
+          <p>——简约黑檀木茶几——</p>
+          <span class="ic"><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="assets/imgs/shouye2.png" alt="">
+          <p>——北欧白象木书架——</p>
+          <span class="ic"><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="assets/imgs/shouye3.png" alt="">
+          <p>——北欧风餐边柜——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="assets/imgs/img1.png" alt="">
+          <p>——北欧原木色——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="assets/imgs/img1.png" alt="">
+          <p>——北欧原木色—— </p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        
+      </ul>
+      </div>    
+      <div *ngSwitchCase="1">
+        <!--轮播-->
+       <ion-slides class="sli" loop="true" autoplay="300"pager="true" >  
+        <ion-slide>
+          <img src="../../assets/imgs/jiaju.png"/> 
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/imgs/jiaju.png"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/imgs/jiaju.png"/>
+        </ion-slide>
+       </ion-slides>
+        <ul class="jiaju-good1">
+          <li>
+              <img src="assets/imgs/jiaju1.png" alt="">
+              <p>客厅</p>
+          </li>
+          <li>
+              <img src="assets/imgs/jiaju2.png" alt="">
+              <p>书房</p>
+          </li>
+          <li>
+              <img src="assets/imgs/jiaju3.png" alt="">
+              <p>门厅</p>
+          </li>
+        </ul>
+        <div class="subtitle1">
+            <h3 text-center>桔|子|家|居</h3>
+            <p text-center>Orange household</p>
+        </div>
+        <ul class="goods">
+            <li>
+              <img src="assets/imgs/jiaju4.png" alt="">
+              <p class="jiaju-p1">—欧式全实木花几— RMB 600</p>
+              <span><ion-icon name="md-star-half"></ion-icon></span>
+            </li>
+            <li>
+                <img src="assets/imgs/jiaju5.png" alt="">
+                <p class="jiaju-p1">—现代简约早餐桌— RMB 450</p>
+                <span><ion-icon name="md-star-half"></ion-icon></span>
+            </li>
+            <li>
+                  <img src="assets/imgs/jiaju4.png" alt="">
+                  <p class="jiaju-p1">—欧式全实木花几— RMB 600</p>
+                  <span><ion-icon name="md-star-half"></ion-icon></span>
+            </li>
+            <li>
+                    <img src="assets/imgs/jiaju5.png" alt="">
+                    <p class="jiaju-p1">—现代简约早餐桌— RMB 450</p>
+                    <span><ion-icon name="md-star-half"></ion-icon></span>
+            </li>
+        </ul>
+      </div>
+      <div *ngSwitchCase="2">这是canchu</div>
+      <div *ngSwitchCase="3">这是bed</div>
+    </div>
+  
+      
+  </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<ion-header>
+  <ion-navbar color="yel">
+      <button ion-button icon-only menuToggle>    左侧出现侧边栏
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+  <button ion-button block (click)="goSub()">跳转</button>
+  <button ion-button block (click)="go()">注册</button>
+  <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
+  <component-a #ac></component-a>   引入a组件   ac模板引用变量，#ac直接指代的是a标签
+  <ion-segment [(ngModel)]="icons" color="secondary"> 按钮的切换
+      <ion-segment-button value="camera">
+        <ion-icon name="camera"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="bookmark">
+        <ion-icon name="bookmark"></ion-icon>
+      </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="icons">   控制下方内容切换
+    <div *ngSwitchCase="'camera'">这是camera</div>    'camera'指代的是字符串
+    <div *ngSwitchCase="'bookmark'">这是bookmark</div>
+  </div>
+    <ion-list>
+      <ion-item *ngFor="let i of items">{{i}}</ion-item>
+    </ion-list>
+  <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())">上拉加载
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+-->

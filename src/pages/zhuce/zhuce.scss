@@ -1,0 +1,25 @@
+page-zhuce {
+    ion-content{
+        background:url(../assets/imgs/4.png);
+        background-size: cover;  /*铺满*/
+    }
+    .box{
+      ion-item{
+          background:transparent;
+          ion-icon{
+              color:#d1dad8;
+          }
+          ion-input{
+              color:white;
+          }
+      }
+      button{
+          color:#fff;
+          margin-top:30px;
+      }
+      p{
+          color:#fff!important;  /*修改框架样式时，!important优先级比行内高*/
+          text-align:center;
+      }
+    }
+}

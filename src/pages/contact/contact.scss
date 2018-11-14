@@ -1,0 +1,33 @@
+page-contact {
+    .scroll-content{
+        padding:0px!important;
+        margin:0px;
+    }
+    .goods{
+        padding:0;
+        margin:0;
+        li{position: relative;
+        img{
+            width:100%;
+            display:block;
+        }
+        div{
+            background:rgba(128,128,128,0.5);
+           position:absolute;
+           top:25%;
+           left:25%;
+           width:50%;
+           height:50%;
+           color:white;
+           font-size:20px;
+           .p{
+            font-size:12px;
+           }
+           p{
+               text-align:center;
+               margin:10px 0;
+           }
+        }
+      }
+    }
+}

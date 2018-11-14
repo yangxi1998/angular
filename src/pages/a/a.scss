@@ -1,0 +1,11 @@
+page-a {
+   ion-scroll{
+       height:100px;
+       white-space:nowrap;/*内容不折行*/
+       span{
+           display:inline-box;/*行内块元素，不会独占一行 必须设置为块元素，后面的width才能设置*/
+           width:100px;   
+           text-align:center;
+       }
+   }
+}

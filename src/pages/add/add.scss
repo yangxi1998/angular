@@ -1,0 +1,30 @@
+page-add {
+    ion-content{
+    background:#ffdb2c!important;
+    .good{
+        padding:0;
+        margin:40% 15% 0 15%;
+        height:54%;
+        width:70%;
+      li{
+          width:45%;;
+          float:left;
+          margin-bottom:20px;
+          div{
+              text-align:center;
+              line-height:100px;
+              width:100px;
+              height:100px;
+              border-radius:50%;
+              background:white;
+              font-size:30px;
+          }
+          p{text-align:center;margin:10px 0;}
+          span{text-align:center;display:block;font-size:12px; color:rgb(119,102,21);}
+      }
+    }
+    .a1{
+        margin-right:10%;
+    }
+}
+}
